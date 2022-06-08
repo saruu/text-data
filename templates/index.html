@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Saru</title>
+</head>
+<body>
+<h1>Welcome to the text.</h1>
+How are you Saru.
+<form action="/analyze", method ='POST' >
+    {% csrf_token %}
+    <textarea name ='text' style="width: 721px; height: 141px;"></textarea>
+    <input type="checkbox" name="removepunc">Remove Punc
+    <input type="checkbox" name ="UPPERCASE">UPPERCASE
+    <input type="checkbox" name="charcount">CharCount
+    <button type="submit">Analyze text</button>
+
+
+
+</form>
+</body>
+</html>
